@@ -1,18 +1,21 @@
 
-var someInts = [8,-6,2,109,3,71]
-func minMax(array:[Int]) -> (min:Int,max:Int)
+var someInts:[Int] = [Int]()
+while true
 {
-    var currentMin = array[0]
-    var currentMax = array[0]
-    for value in array {
-        if value < currentMin{
-            currentMin = value
-        }
-        else if value > currentMax{
-            currentMax = value
-        }
+   let input = readLine()!
+    var num = 0
+    if input != "end"
+    {
+        num = Int(input)!
+        someInts.append(num)
+    }else{
+        break;
     }
-    return (currentMin,currentMax)
 }
-let bounds = minMax(array:someInts)
-print("最小值为\(bounds.min),最大值为 \(bounds.max)")
+func cacalate(b:Float) -> (m:Float,z:Float)
+{
+    for item in b{
+        sum = 2*m*z
+        sum2 = 3.14*num
+    }
+}
