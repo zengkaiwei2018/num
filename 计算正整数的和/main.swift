@@ -1,24 +1,18 @@
 
-var someInts:[Int] = [Int]()
-while true
+var someInts = [8,-6,2,109,3,71]
+func minMax(array:[Int]) -> (min:int,max:Int)
 {
-    let input = readLine()!
-    var num = 0
-    if input != "end"
-    {
-        num = Int(input)!
-        someInts.append(num)
+    var currentMin = array[0]
+    var currentMax = array[0]
+    for value in array {
+        if value < currentMin{
+            currentMin = value
+        }
+        else if value > currentMax{
+            currentMax = value
+        }
     }
-    else{
-        braak;
-    }
+    return (currentMin,currentMax)
 }
-func caculate(values:[Int])->Int
-{
-    var sum = 0
-    for item values{
-        sum = sum + item
-    }
-    return sum
-}
-
+let bounds = minMax(array:someInts)
+print("最小值为\(bounds.min),最大值为 \(bounds.max)")
