@@ -1,6 +1,6 @@
 
 var someInts = [8,-6,2,109,3,71]
-func minMax(array:[Int]) -> (min:int,max:Int)
+func minMax(array:[Int]) -> (min:Int,max:Int)
 {
     var currentMin = array[0]
     var currentMax = array[0]
